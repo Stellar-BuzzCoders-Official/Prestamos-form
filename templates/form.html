@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Préstamos y Adelantos</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="user">
+        <img src="../assets/Ellipse%201.png" alt="Image">
+        <p>Daniel Arotoma</p>
+        <p>Desarrollador de software IA</p>
+    </div>
+    <div class="form-container">
+        <h2>SOLICITUD DE PRESTAMOS Y ADELANTOS</h2>
+        <form method="POST">
+            <label for="motivo">Motivo</label>
+            <input type="text" id="motivo" name="motivo" required>
+            
+            <label for="monto">Monto</label>
+            <input type="number" id="monto" name="monto" required>
+            
+            <label for="cuotas">Numero de cuotas (12 max)</label>
+            <input type="number" id="cuotas" name="cuotas" max="12" required>
+            
+            <label for="descripcion">Descripción a detalle</label>
+            <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+            
+            <div class="privacy">
+                <input type="checkbox" id="privacy" name="privacy" required>
+                <label for="privacy">Al enviar el formulario, acepta el tratamiento de sus datos. <a href="#">Política de privacidad.</a></label>
+            </div>
+            
+            <button type="submit">Solicitar</button>
+        </form>
+    </div>
+</body>
+</html>
